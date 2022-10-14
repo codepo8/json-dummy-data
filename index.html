@@ -6,13 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JSON Dummy Data</title>
     <style>
+        html {
+            max-width: 70ch;
+            padding: 1em 1em;
+            margin: auto;
+            line-height: 1.75;
+            font-size: 1.25em;
+        }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+        #links {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 1em;
+        }
+        section {
+            flex: 1;
+        }
+        h1 {
+            font-size: 1em;
+        }
+        h2 {
+            font-size: 0.75em;
+        }
+        ul {
+            font-size: .6em;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
     </style>
 </head>
 <body>
 <h1>JSON Dummy data files</h1>
+<div id="links">
+<section>
 <h2>Formatted versions</h2>
     <ul>
      <li><a href="411k.json">411 KB</a></li>
@@ -27,6 +58,8 @@
      <li><a href="176k.json">176 KB</a></li>
      <li><a href="411k.json">411 KB</a></li>
 </ul>
+</section>
+<section>
 <h2>Minified versions</h2>
 <ul>
      <li><a href="411k-min.json">411 KB - minified</a></li>
@@ -40,7 +73,17 @@
      <li><a href="137k-min.json">137 KB - minified</a></li>
      <li><a href="176k-min.json">176 KB - minified</a></li>
      <li><a href="411k-min.json">411 KB - minified</a></li>
-</ul>   
+</ul>
+</section>
+<section>
+<h2>Invalid JSON</h2>
+<ul>
+    <li><a href="23k-min-with-errors.json">23 KB - minified - broken</a></li>
+    <li><a href="cut-off-min.json">Cut off JSON - broken</a></li>
+    <li><a href="json-with-binary-data.json">JSON with binary data</a></li>
+</ul>
+</section>
+</div>
 
 </body>
 </html>
